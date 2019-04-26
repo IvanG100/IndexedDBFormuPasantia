@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: ghostwhite;
+
+}
+
+.centro {
+    text-align: center;
+}
+
+
+.formu {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: auto;
+}
+
+.formu-header {
+    background: rgb(0,100,152);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.formu-body {
+    padding: 16px;
+    background: #f2f2f2;
+}
+
+.formu-body input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #eee;
+}
+
+.formu-footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    background: #ccc;
+}
+
+.formu-footer button, input[type=submit] {
+    padding: 10px;
+    background: rgb(0,100,152); /*#269abc*/
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+
+}
+
+.formu-footer button:hover, input[type=submit]:hover {
+    background: #269abc;
+    cursor: pointer;
+}
+
+[class*="col-"] {
+    width: 100%;
+    padding: 3px;
+
+}
+
+.tabla {
+    width: 70%;
+    
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+.tabla button {
+    padding: 10px;
+    background: none;
+    color: blue;
+    font-size: 15px;
+    border: none;
+    /*border-radius: 2px;*/
+    cursor: pointer;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th {
+    height: 50px;
+    /*background-color: rgb(0,100,152);
+    color: white;*/
+    color: black;
+
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (min-width: 992px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%; margin-top: 8px;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    [class*="col-"] {
+        float: left;
+    }
+
+    .formu {
+        width: 60%;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;margin-top: 8px;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    [class*="col-"] {
+        float: left;
+    }
+
+    .formu {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tabla {
+        max-width: 100%;
+        border-collapse: collapse;
+        margin: auto;
+
+
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid black;
+    }
+
+    
+}
+
+#registro {
+    overflow-x: auto;
+}
+
+#msg {
+    padding: 10px;
+    background: red;
+    margin: auto;
+    width: 70%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+    
+}
+
+
+
